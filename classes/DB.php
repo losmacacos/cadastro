@@ -31,8 +31,8 @@ class DB{
 		// 	}
 
 		// }
-
-		// return self::$instance;
+				self::$instance = $app;
+		return self::$instance;
 	}
  	
 	public static function prepare($sql){
