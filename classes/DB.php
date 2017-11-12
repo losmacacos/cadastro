@@ -11,7 +11,7 @@ class DB{
 		if(!isset(self::$instance)){
 
 			try {
-				self::$instance = new PDO('pgsql:host=' . ';port=5432'. DB_HOST . ';dbname=' . DB_NAME, DB_USER, DB_PASS);
+				self::$instance = new PDO('pgsql:host='.DB_HOST.';port=5432;dbname='.DB_NAME.';user='.DB_USER'.;password='DB_PASS);
 				self::$instance->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				self::$instance->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 			} catch (PDOException $e) {
