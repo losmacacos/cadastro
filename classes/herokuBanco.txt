@@ -1,0 +1,28 @@
+ADMINISTRATION
+
+Database Credentials
+
+Get credentials for manual connections to this database.
+
+Cancel
+Please note that these credentials are not permanent.
+Heroku rotates credentials periodically and updates applications where this database is attached.
+
+Host
+ec2-107-22-167-179.compute-1.amazonaws.com
+
+Database
+dbqc4gqll2o9ps
+
+User
+wolqehbjdhqouv
+
+Port
+5432
+
+Password
+6f8c7b8b99faa31823c88f37df3b6bc315f2320ee9cf75a033740c4c859f5322
+
+URI
+postgres://wolqehbjdhqouv:6f8c7b8b99faa31823c88f37df3b6bc315f2320ee9cf75a033740c4c859f5322@ec2-107-22-167-179.compute-1.amazonaws.com:5432/dbqc4gqll2o9psHeroku CLI
+heroku pg:psql postgresql-pointy-16067 --app kungfucadastro
