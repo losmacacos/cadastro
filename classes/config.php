@@ -1,9 +1,9 @@
 <?php
 
-define('DB_HOST', 'ec2-107-22-167-179.compute-1.amazonaws.com');
-define('DB_NAME', 'dbqc4gqll2o9ps');
-define('DB_USER', 'wolqehbjdhqouv');
-define('DB_PASS', '6f8c7b8b99faa31823c88f37df3b6bc315f2320ee9cf75a033740c4c859f5322');
+define('DB_HOST', 'ec2-184-73-174-10.compute-1.amazonaws.com');
+define('DB_NAME', 'd9vdiign21bcuv');
+define('DB_USER', 'zwjaegfjfxxizf');
+define('DB_PASS', '5049949664477c785135e52fbb54265edc71a7a3c2c67cfdcc878f16f7763741');
 
 // define('DB_HOST', 'localhost');
 // define('DB_NAME', 'phpoo');

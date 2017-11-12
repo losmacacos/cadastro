@@ -13,7 +13,7 @@ class DB{
 		// if(!isset(self::$instance)){
 
 			// try {
-				$dbopts = parse_url(getenv('postgres://wolqehbjdhqouv:6f8c7b8b99faa31823c88f37df3b6bc315f2320ee9cf75a033740c4c859f5322@ec2-107-22-167-179.compute-1.amazonaws.com:5432/dbqc4gqll2o9ps'));
+				$dbopts = parse_url(getenv('postgres://zwjaegfjfxxizf:5049949664477c785135e52fbb54265edc71a7a3c2c67cfdcc878f16f7763741@ec2-184-73-174-10.compute-1.amazonaws.com:5432/d9vdiign21bcuv'));
 				self::$instance->register(new Herrera\Pdo\PdoServiceProvider(),
 				               array(
 				                   'pdo.dsn' => 'pgsql:dbname='.ltrim($dbopts["path"],'/').';host='.$dbopts["host"] . ';port=' . $dbopts["port"],
