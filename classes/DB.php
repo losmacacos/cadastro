@@ -16,7 +16,7 @@ class DB{
 				$dbopts = parse_url(getenv('postgres://wolqehbjdhqouv:6f8c7b8b99faa31823c88f37df3b6bc315f2320ee9cf75a033740c4c859f5322@ec2-107-22-167-179.compute-1.amazonaws.com:5432/dbqc4gqll2o9ps'));
 				$instance->register(new Herrera\Pdo\PdoServiceProvider(),
 				               (
-				                   'pgsql:dbname=dbqc4gqll2o9ps/host=ec2-107-22-167-179.compute-1.amazonaws.com;port=5432;;user=wolqehbjdhqouv;password=6f8c7b8b99faa31823c88f37df3b6bc315f2320ee9cf75a033740c4c859f5322'
+				                   'pgsql:dbname=dbqc4gqll2o9ps/host=ec2-107-22-167-179.compute-1.amazonaws.com;port=5432;user=wolqehbjdhqouv;password=6f8c7b8b99faa31823c88f37df3b6bc315f2320ee9cf75a033740c4c859f5322'
 				               )
 				);
 
