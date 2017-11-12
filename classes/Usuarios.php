@@ -27,7 +27,7 @@ class Usuarios extends Crud{
 
 	public function insert(){
 
-		$sql  = "INSERT INTO $this->table (nome, email, senha, endereco, numero, bairro, cidade, estado, cep, nomeMae, nomePai, numRG, numCPF, dataNasc, sexo, modalidade) VALUES (:nome, :email, :senha, :endereco, :numero, :bairro, :cidade, :estado, :cep, :nomeMae, :nomePai, :numRG, :numCPF, :dataNasc, :sexo, :modalidade)";
+		$sql  = "INSERT INTO usuarios VALUES (:nome, :email, :senha, :endereco, :numero, :bairro, :cidade, :estado, :cep, :nomeMae, :nomePai, :numRG, :numCPF, :dataNasc, :sexo, :modalidade)";
 		$stmt = DB::prepare($sql);
 		$stmt->bindParam(':nome', $this->nome);
 		$stmt->bindParam(':email', $this->email);
@@ -51,7 +51,7 @@ class Usuarios extends Crud{
 
 	public function update($id){
 
-		$sql  = "UPDATE $this->table SET nome = :nome, email = :email, senha = :senha, endereco = :endereco, numero = :numero, bairro = :bairro, cidade = :cidade, estado = :estado, cep = :cep, nomeMae = :nomeMae, nomePai = :nomePai, numRG = :numRG, numCPF = :numCPF, dataNasc = :dataNasc, sexo = :sexo, modalidade = :modalidade WHERE id = :id";
+		$sql  = "UPDATE usuarios SET nome = :nome, email = :email, senha = :senha, endereco = :endereco, numero = :numero, bairro = :bairro, cidade = :cidade, estado = :estado, cep = :cep, nomeMae = :nomeMae, nomePai = :nomePai, numRG = :numRG, numCPF = :numCPF, dataNasc = :dataNasc, sexo = :sexo, modalidade = :modalidade WHERE id = :id";
 		$stmt = DB::prepare($sql);
 		$stmt->bindParam(':nome', $this->nome);
 		$stmt->bindParam(':email', $this->email);
