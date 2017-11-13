@@ -10,7 +10,7 @@ abstract class Crud extends DB{
 	abstract public function update($id);
 
 	public function find($id){
-		$sql  = "SELECT * FROM $this->table WHERE id = :id";
+		$sql  = "SELECT * FROM $this->table WHERE id = :id;";
 		$stmt = DB::prepare($sql);
 		$stmt->bindParam(':id', $id, PDO::PARAM_INT);
 		$stmt->execute();
@@ -18,14 +18,14 @@ abstract class Crud extends DB{
 	}
 
 	public function findAll(){
-		$sql  = "SELECT * FROM $this->table";
+		$sql  = "SELECT * FROM $this->table;";
 		$stmt = DB::prepare($sql);
 		$stmt->execute();
 		return $stmt->fetchAll();
 	}
 
 	public function delete($id){
-		$sql  = "DELETE FROM $this->table WHERE id = :id";
+		$sql  = "DELETE FROM $this->table WHERE id = :id;";
 		$stmt = DB::prepare($sql);
 		$stmt->bindParam(':id', $id, PDO::PARAM_INT);
 		return $stmt->execute(); 

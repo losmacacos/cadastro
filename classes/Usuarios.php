@@ -24,7 +24,7 @@ class Usuarios extends Crud{
 
 	public function insert(){
 
-		$sql  = "INSERT INTO $this->table (nome, email, senha, endereco, numero, bairro, cidade, estado, cep, nomeMae, nomePai, numRG, numCPF, dataNasc, sexo, modalidade) VALUES (:nome, :email, :senha, :endereco, :numero, :bairro, :cidade, :estado, :cep, :nomeMae, :nomePai, :numRG, :numCPF, :dataNasc, :sexo, :modalidade)";
+		$sql  = "INSERT INTO $this->table (nome, email, senha, endereco, numero, bairro, cidade, estado, cep, nomeMae, nomePai, numRG, numCPF, dataNasc, sexo, modalidade) VALUES (:nome, :email, :senha, :endereco, :numero, :bairro, :cidade, :estado, :cep, :nomeMae, :nomePai, :numRG, :numCPF, :dataNasc, :sexo, :modalidade);";
 		$stmt = $this->prepare($sql);
 		$stmt->bindParam(':nome', $this->nome);
 		$stmt->bindParam(':email', $this->email);
