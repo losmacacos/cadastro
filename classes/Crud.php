@@ -18,7 +18,7 @@ abstract class Crud extends DB{
 	}
 
 	public function findAll(){
-		$sql  = "SELECT * FROM $this->table";
+		$sql  = "SELECT * FROM public.'usuarios'");
 		$stmt = DB::prepare($sql);
 		$stmt->execute();
 		return $stmt->fetchAll();
