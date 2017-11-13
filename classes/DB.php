@@ -14,7 +14,7 @@ class DB{
 
 			// try {
 				$dbopts = parse_url(getenv('postgres://zwjaegfjfxxizf:5049949664477c785135e52fbb54265edc71a7a3c2c67cfdcc878f16f7763741@ec2-184-73-174-10.compute-1.amazonaws.com:5432/d9vdiign21bcuv'));
-				$app->register(new Herrera\Pdo\PdoServiceProvider(),
+				self::$instance->register(new Herrera\Pdo\PdoServiceProvider(),
 				               array(
 				                   'pdo.dsn' => 'pgsql:dbname='.ltrim($dbopts["path"],'/').';host='.$dbopts["host"] . ';port=' . $dbopts["port"],
 				                   'pdo.username' => $dbopts["user"],
